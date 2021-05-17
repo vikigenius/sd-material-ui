@@ -45,6 +45,24 @@ app.layout = html.Div([
             spacer,
 
             html.Div([
+                html.P([html.Strong('Test for Grid')]),
+                sd_material_ui.Grid(
+                    id='grid',
+                    children=[
+                        html.H4(children='Grid items'),
+                        html.Ul(children=[
+                            html.Li(children=['Item 1']),
+                            html.Li(children=['Item 2']),
+                            html.Li(children=['Item 3']),
+                        ]),
+                    ],
+                    container=True,
+                ),
+            ]),
+
+            spacer,
+
+            html.Div([
                 html.P([html.Strong('Test for drawer')]),
                 sd_material_ui.Drawer(
                     id='drawer',
